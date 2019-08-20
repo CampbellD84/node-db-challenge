@@ -6,10 +6,10 @@ exports.up = function(knex) {
       .unique()
       .notNullable();
     tbl.string("description");
-    tbl
-      .integer("project_id")
-      .references("id")
-      .inTable("projects");
+    // tbl
+    //   .integer("project_id")
+    //   .references("id")
+    //   .inTable("projects");
   });
 };
 
