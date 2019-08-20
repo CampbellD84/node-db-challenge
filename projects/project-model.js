@@ -15,7 +15,7 @@ function getProjectById(id) {
     .first();
 }
 
-await function addProject(project) {
+function addProject(project) {
   const [id] = db("projects").insert(project);
   return getProjectById(id);
-};
+}
