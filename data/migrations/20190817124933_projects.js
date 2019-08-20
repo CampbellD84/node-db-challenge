@@ -7,10 +7,10 @@ exports.up = function(knex) {
       .boolean("completed")
       .notNullable()
       .defaultTo(false);
-    tbl
-      .integer("resource_id")
-      .references("id")
-      .inTable("resources");
+    // tbl
+    //   .integer("resource_id")
+    //   .references("id")
+    //   .inTable("resources");
   });
 };
 
